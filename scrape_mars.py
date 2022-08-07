@@ -38,7 +38,7 @@ def scrape():
     fact_table = pd.read_html('https://galaxyfacts-mars.com')[0]
     fact_table.columns=['Description', 'Mars', 'Earth']
     fact_table.set_index('Description', inplace=True)
-    mars_fact_table_html = fact_table.to_html(classes= ["table", "table-active"], justify = "center")
+    mars_fact_table_html = fact_table.to_html(classes= ["table", "table-striped"], justify = "left")
     
     # Mars hemisphere name and image to be scraped
     browser.visit('https://marshemispheres.com')
