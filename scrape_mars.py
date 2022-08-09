@@ -2,9 +2,9 @@
 import pandas as pd
 from splinter import Browser
 from bs4 import BeautifulSoup as soup
-from datetime import datetime
-import os
-import time
+# from datetime import datetime
+# import os
+# import time
 from webdriver_manager.chrome import ChromeDriverManager 
 
 def init_browser():
